@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// 自定義全域CSS
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.head {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.head-nav {
+  display: flex;
+}
+
+.head-nav-link {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 24px 20px;
+}
+
+// BLOG頂部圖片與slogan
+.head-img {
+  display: flex;
+  max-width: 100%;
+}
+
+.head-left-img {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.head-right-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+// 位置 position: relative
+.blog-slogan-position {
+  color: #0027d5;
+  position: relative;
+}
+
+// 實際控制顯示位置
+.slogan-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 80px;
+  margin-top: 300px;
+}
+
+.slogan-text-title {
+  font-size: 120px;
+  font-weight: 900;
+}
+
+.slogan-text-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+// BLOG頂部最新文章區塊
+.latest-artical-section {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+// BLOG最新文章左側圖片
+.latest-artical-imgwrap {
+  max-width: 50%;
+}
+
+.latest-artical-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  width: 948px;
+  height: 640px;
+}
+
+// BLOG最新文章右側文字區塊
+.latest-artical {
+  max-width: 50%;
+  padding-left: 24px;
+  align-content: center;
+}
+
+.latest-artical-content {
+  max-width: 636px;
+}
+
+.card-time {
+  margin-bottom: 4px;
+  display: block;
+  font-weight: 500;
+}
+
+// BLOG最新文章右側文字tag
+.card-tag {
+  display: flex;
+}
+
+.card-tag-text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-right: 5px;
+  color: #0027d5;
+}
+
+// BLOG最新文章右側文字藍底pin
+.card-tag-bluepin {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0027d5;
+  border-radius: 40px;
+  align-self: center;
+  padding: 6px 12px;
+  margin-left: 3px;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.card-text {
+  color: #4b4b4b;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+// 文章底部閱讀內文按鈕
+.btn {
+  display: inline-block;
+  color: #4b4b4b;
+  border: 1px solid #000;
+  padding: 8px 16px;
+  border-radius: 40px;
+  align-self: flex-start;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+// BLOG卡片區塊(body)
+.body-wrap {
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.card-search-bar{
+  display: flex;
+  max-width: 416px;
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 16px;
+  p{
+    margin-left: 10px;
+  }
+}
+
+.body-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 416px;
+  margin: 40px 12px;
+  .card-top {
+    margin-bottom: 16px;
+    .card-top-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// .card-content {
+//   time {
+//     display: block;
+//     font-weight: 500;
+//     margin-bottom: 4px;
+//   }
+//   ul {
+//     display: flex;
+//   }
+//   li {
+//     font-size: 24px;
+//     font-weight: 500;
+//     margin-right: 5px;
+//     color: #0027d5;
+//   }
+//   h2 {
+//     font-size: 28px;
+//     font-weight: 700;
+//     margin-bottom: 8px;
+//   }
+// }
+
+// .card-text {
+//   color: #4b4b4b;
+//   margin-bottom: 16px;
+//   display: -webkit-box;
+//   -webkit-box-orient: vertical;
+//   -webkit-line-clamp: 2;
+//   overflow: hidden;
+// }
