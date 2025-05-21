@@ -172,6 +172,10 @@ a {
   display: flex;
 }
 
+.head-slogan-imgwrap {
+  width: 50%;
+}
+
 .head-left-img {
   width: 100%;
   height: auto;
@@ -211,6 +215,27 @@ a {
   font-weight: bold;
 }
 
+@media (max-width: 992px) {
+  .head-img {
+    flex-direction: column;
+  }
+  .head-slogan-imgwrap {
+    width: 100%;
+  }
+  .blog-slogan-position {
+    width: 100%;
+  }
+  .slogan-text {
+    max-width: 314px;
+    margin: 24px;
+    margin-top: -300px;
+  }
+  .slogan-text-title {
+    font-size: 52px;
+    font-weight: 900;
+    margin-bottom: 12px;
+  }
+}
 .latest-artical-section {
   display: flex;
   margin-bottom: 80px;
@@ -230,6 +255,19 @@ a {
   height: 640px;
 }
 
+@media (max-width: 992px) {
+  .latest-artical-section {
+    margin-bottom: 64px;
+    flex-direction: column;
+    border-bottom: 2px solid gray;
+  }
+  .latest-artical-imgwrap {
+    width: 100%;
+  }
+  .latest-artical-img {
+    height: 375px;
+  }
+}
 .latest-artical {
   width: 50%;
   padding-left: 24px;
@@ -240,6 +278,15 @@ a {
   max-width: 636px;
 }
 
+@media (max-width: 992px) {
+  .latest-artical {
+    width: 100%;
+    padding: 48px 12px;
+  }
+  .latest-artical-content {
+    max-width: 636px;
+  }
+}
 .card-time {
   margin-bottom: 4px;
   display: block;
@@ -303,6 +350,11 @@ a {
   margin-bottom: 80px;
 }
 
+@media (max-width: 992px) {
+  .body-wrap {
+    margin: 64px 0;
+  }
+}
 .card-search-bar {
   display: flex;
   max-width: 416px;
@@ -324,6 +376,11 @@ a {
   padding-left: 50px;
 }
 
+@media (max-width: 992px) {
+  .card-search-bar {
+    margin: 0 12px;
+  }
+}
 .body-card-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -342,6 +399,25 @@ a {
   height: auto;
 }
 
+@media (max-width: 992px) {
+  .body-card-wrap {
+    margin: 40px 0 8px 0;
+  }
+  .card {
+    margin: 0px 12px 32px 12px;
+  }
+  .card .card-top {
+    width: 100%;
+  }
+  .card .card-top .card-top-img {
+    max-width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+}
 .card-page-nav {
   max-width: 328px;
   display: flex;
@@ -397,8 +473,20 @@ a {
   display: block;
 }
 
+@media (max-width: 992px) {
+  .company-info {
+    display: none;
+  }
+}
 .copyright {
   background: #ffffff;
   text-align: center;
   padding: 24px 0;
+}
+
+@media (max-width: 992px) {
+  .copyright {
+    text-align: center;
+    padding: 24px 40px;
+  }
 }/*# sourceMappingURL=all.css.map */
