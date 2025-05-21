@@ -147,6 +147,7 @@ a {
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  background: #fbfbfb;
 }
 
 .head {
@@ -169,11 +170,10 @@ a {
 
 .head-img {
   display: flex;
-  max-width: 100%;
 }
 
 .head-left-img {
-  max-width: 50%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -181,7 +181,7 @@ a {
 }
 
 .head-right-img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -189,16 +189,16 @@ a {
 }
 
 .blog-slogan-position {
-  color: #0027d5;
-  position: relative;
+  width: 50%;
 }
 
 .slogan-text {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
+  max-width: 333px;
   margin-left: 80px;
-  margin-top: 300px;
+  margin-top: -522px;
+  z-index: 1;
+  color: #0027d5;
 }
 
 .slogan-text-title {
@@ -217,7 +217,7 @@ a {
 }
 
 .latest-artical-imgwrap {
-  max-width: 50%;
+  width: 50%;
 }
 
 .latest-artical-img {
@@ -231,7 +231,7 @@ a {
 }
 
 .latest-artical {
-  max-width: 50%;
+  width: 50%;
   padding-left: 24px;
   align-content: center;
 }
@@ -300,17 +300,28 @@ a {
 .body-wrap {
   margin: 0 auto;
   max-width: 1320px;
+  margin-bottom: 80px;
 }
 
 .card-search-bar {
   display: flex;
   max-width: 416px;
-  border: 1px solid #000;
-  border-radius: 40px;
-  padding: 16px;
+  margin-left: 12px;
+  align-items: center;
+  position: relative;
 }
-.card-search-bar p {
-  margin-left: 10px;
+
+.material-symbols-outlined {
+  position: absolute;
+  left: 16px;
+}
+
+.card-search-bar-input {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 40px;
+  padding-left: 50px;
 }
 
 .body-card-wrap {
@@ -329,4 +340,65 @@ a {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.card-page-nav {
+  max-width: 328px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: #fff;
+  padding: 8px 0;
+}
+
+.page-specified-num ul {
+  display: flex;
+}
+.page-specified-num a:hover {
+  color: #0027d5;
+}
+
+.page-btn {
+  width: 40px;
+  text-align: center;
+}
+
+.page-btn-num {
+  display: block;
+  padding: 8px 0;
+}
+
+.pre-next-page a {
+  display: block;
+  padding-top: 6px;
+}
+
+.company-info {
+  display: flex;
+  padding: 80px 312px;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+.company-email {
+  font-size: 32px;
+}
+
+.company-short-link {
+  display: flex;
+  align-items: center;
+}
+.company-short-link a {
+  display: block;
+}
+.company-short-link img {
+  display: block;
+}
+
+.copyright {
+  background: #ffffff;
+  text-align: center;
+  padding: 24px 0;
 }/*# sourceMappingURL=all.css.map */

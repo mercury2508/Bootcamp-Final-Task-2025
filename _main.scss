@@ -143,6 +143,7 @@ a {
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  background: #fbfbfb;
 }
 
 .head {
@@ -166,18 +167,18 @@ a {
 // BLOG頂部圖片與slogan
 .head-img {
   display: flex;
-  max-width: 100%;
+  // max-width: 100%;
 }
 
 .head-left-img {
-  max-width: 50%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
 }
 
 .head-right-img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
@@ -185,17 +186,17 @@ a {
 
 // 位置 position: relative
 .blog-slogan-position {
-  color: #0027d5;
-  position: relative;
+  width: 50%;
 }
 
 // 實際控制顯示位置
 .slogan-text {
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
+  max-width: 333px;
   margin-left: 80px;
-  margin-top: 300px;
+  margin-top: -522px;
+  z-index: 1;
+  color: #0027d5;
 }
 
 .slogan-text-title {
@@ -216,7 +217,7 @@ a {
 
 // BLOG最新文章左側圖片
 .latest-artical-imgwrap {
-  max-width: 50%;
+  width: 50%;
 }
 
 .latest-artical-img {
@@ -230,7 +231,7 @@ a {
 
 // BLOG最新文章右側文字區塊
 .latest-artical {
-  max-width: 50%;
+  width: 50%;
   padding-left: 24px;
   align-content: center;
 }
@@ -299,23 +300,36 @@ a {
   }
 }
 
-// BLOG卡片區塊(body)
+// BLOG中央區塊(body)
 .body-wrap {
   margin: 0 auto;
   max-width: 1320px;
+  margin-bottom: 80px;
 }
 
-.card-search-bar{
+// 卡片上方搜尋欄
+.card-search-bar {
   display: flex;
   max-width: 416px;
-  border: 1px solid #000;
-  border-radius: 40px;
-  padding: 16px;
-  p{
-    margin-left: 10px;
-  }
+  margin-left: 12px;
+  align-items: center;
+  position: relative;
 }
 
+.material-symbols-outlined {
+  position: absolute;
+  left: 16px;
+}
+
+.card-search-bar-input {
+  border: 1px solid #000;
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 40px;
+  padding-left: 50px;
+}
+
+// 卡片區塊
 .body-card-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -334,33 +348,71 @@ a {
   }
 }
 
-// .card-content {
-//   time {
-//     display: block;
-//     font-weight: 500;
-//     margin-bottom: 4px;
-//   }
-//   ul {
-//     display: flex;
-//   }
-//   li {
-//     font-size: 24px;
-//     font-weight: 500;
-//     margin-right: 5px;
-//     color: #0027d5;
-//   }
-//   h2 {
-//     font-size: 28px;
-//     font-weight: 700;
-//     margin-bottom: 8px;
-//   }
-// }
+// 卡片底部頁數
+.card-page-nav {
+  max-width: 328px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: #fff;
+  padding: 8px 0;
+}
 
-// .card-text {
-//   color: #4b4b4b;
-//   margin-bottom: 16px;
-//   display: -webkit-box;
-//   -webkit-box-orient: vertical;
-//   -webkit-line-clamp: 2;
-//   overflow: hidden;
-// }
+.page-specified-num {
+  ul {
+    display: flex;
+  }
+  a:hover{
+    color: #0027d5;
+  }
+}
+
+.page-btn {
+  width: 40px;
+  text-align: center;
+}
+
+.page-btn-num {
+  display: block;
+  padding: 8px 0;
+}
+
+.pre-next-page {
+  a {
+    display: block;
+    padding-top: 6px;
+  }
+}
+
+// footer區塊
+.company-info{
+  display: flex;
+  // max-width: 1320px;
+  // margin: 0 auto;
+  padding: 80px 312px;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+}
+
+.company-email{
+  font-size: 32px;
+}
+
+.company-short-link{
+  display: flex;
+  align-items: center;
+  a{
+    display: block;
+  }
+  img{
+    display: block;
+  }
+}
+
+.copyright{
+  background: #ffffff;
+  text-align: center;
+  padding: 24px 0;
+}
