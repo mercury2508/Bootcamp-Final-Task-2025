@@ -1,0 +1,107 @@
+// 頂部自我簡述
+.self-introduce {
+  position: relative;
+  max-width: 1077px;
+  padding: 80px 40px;
+  margin-left: 763px;
+  margin-top: -160px;
+  background: #ffffff;
+}
+
+.self-introduce-text {
+  font-size: 28px;
+  padding-bottom: 16px;
+}
+
+// body區塊外容器
+.home-body-wrap {
+  max-width: 1296px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+// 專業服務與方案
+.home-body-title {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.serve-content {
+  display: flex;
+  justify-content: center;
+}
+
+.a-line {
+  width: 30px;
+  border: 1px solid #0027d5;
+  margin: 18.75px 5px;
+}
+
+.serve-content-imgwrap {
+  width: 636px;
+}
+
+.serve-content-img {
+  width: 100%;
+  background: gray;
+  display: block;
+  object-fit: cover;
+}
+
+.serve-content-text-wrap {
+  position: relative;
+  height: 210px;
+  padding: 24px;
+  max-width: 480px;
+  margin-top: 55px;
+  margin-left: -40px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.serve-content-text-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.reserve-serve-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.reserve-serve-content-text-wrap {
+  position: relative;
+  height: 210px;
+  padding: 24px;
+  max-width: 480px;
+  margin-top: 55px;
+  margin-right: -40px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.contetn-grip {
+  margin: 64px 0;
+  a{
+    display: block;
+    img{
+      display: block;
+    }
+  }
+}
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 32px 0;
+}
+
+.contact-me-text {
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 8px;
+}
