@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- header -->
       <header class="head">
         <nav>
           <ul class="head-nav">
@@ -16,6 +17,7 @@
           </ul>
         </nav>
       </header>
+      <!-- 首頁頂部橫幅 -->
       <div class="head-img">
         <div class="head-slogan-imgwrap">
           <img
@@ -25,19 +27,18 @@
           />
         </div>
         <div class="blog-slogan-position">
-          <img
-            src="/images/index/a1.png"
-            alt="Hero Section2"
-            class="head-right-img"
-          />
           <div class="slogan-text">
             <h1 class="slogan-text-title">Alyse Wang</h1>
             <h3 class="slogan-text-subtitle">前端工程師 & 職涯諮詢師</h3>
           </div>
         </div>
       </div>
+      <!-- 首頁頂部自我簡述 -->
       <div class="self-introduce">
-        <p class="self-introduce-text">嗨，我是Alyse一名深耕前端技術的工程師</p>
+        <p class="self-introduce-text text-inlineblock">嗨，我是Alyse</p>
+        <p class="self-introduce-text text-inlineblock">
+          一名深耕前端技術的工程師
+        </p>
         <p class="self-introduce-text">
           擅長 React、Vue
           等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！
@@ -69,6 +70,7 @@
           </li>
         </ul>
       </div>
+      <!-- 專業服務與方案 -->
       <div class="home-body-wrap">
         <h2 class="home-body-title">專業服務與方案</h2>
         <div class="serve-content">
@@ -136,24 +138,17 @@
           </div>
         </div>
         <div class="contact-me">
-          <h3 class="contact-me-text">聯繫我，取得更多資訊！</h3>
-          <a href="#">
+          <a href="#" class="contact-me-btn">
+            <h3 class="contact-me-text">聯繫我，取得更多資訊！</h3>
             <img src="/images/btn/contact-me.webp" alt="contact-me-link" />
           </a>
         </div>
       </div>
+      <!-- 部落格精選 -->
       <div class="home-body-artical-wrap">
         <h2 class="home-body-artical-title">部落格精選</h2>
         <ul class="body-card-wrap">
-          <li>
-            <a href="#">
-              <img
-                src="/images/btn/arrow-left-circle-fill 1.png"
-                alt="arrow-left-circle"
-              />
-            </a>
-          </li>
-          <li class="card">
+          <li class="card swiper-one">
             <div class="card-top">
               <img
                 src="/images/index/a6.png"
@@ -176,7 +171,7 @@
               <a href="#" class="btn">閱讀內文</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card swiper-two">
             <div class="card-top">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo3.png?raw=true"
@@ -198,7 +193,7 @@
               <a href="#" class="btn">閱讀內文</a>
             </div>
           </li>
-          <li class="card">
+          <li class="card swiper-three">
             <div class="card-top">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-web-camp/desktop/blog/photo2.png?raw=true"
@@ -222,15 +217,22 @@
               <a href="#" class="btn">閱讀內文</a>
             </div>
           </li>
-          <li>
-            <a href="#">
-              <img src="/images/btn/Vector.png" alt="arrow-right-circle" />
-            </a>
-          </li>
         </ul>
+        <div class="card-navigation-button">
+          <a href="#">
+            <img
+              src="/images/btn/arrow-left-circle-fill 1.png"
+              alt="arrow-left-circle"
+            />
+          </a>
+          <a href="#">
+            <img src="/images/btn/Vector.png" alt="arrow-right-circle" />
+          </a>
+        </div>
       </div>
+      <!-- 諮詢成功案例 -->
       <div class="home-body-wrap">
-        <h2 class="home-body-title">職涯諮詢成功案例</h2>
+        <h2 class="home-body-title">職涯諮詢<br>成功案例</h2>
         <div class="main-content">
           <div class="img-box">
             <img src="/images/index/a7.png" alt="職涯諮詢成功案例圖片" />
@@ -251,91 +253,93 @@
             </div>
           </div>
         </div>
-        <div class="podcast">
-          <ul class="podcast-list">
-            <li class="podcast-list-card">
-              <div class="podcast-img">
-                <img src="/images/index/a8.png" alt="podcast image" />
-              </div>
-              <h3 class="podcast-title">無經驗到前端工程師 Offer</h3>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>打造前端專案與履歷亮點</h5>
-              </div>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>深度強化面試表現</h5>
-              </div>
-              <div class="podcast-line"></div>
-              <a href="#" class="podcast-btn">前往聆聽 podcast</a>
-            </li>
-            <li class="podcast-list-card">
-              <div class="podcast-img">
-                <img src="/images/index/a9.png" alt="podcast image" />
-              </div>
-              <h3 class="podcast-title">轉職迷茫到明確學習規劃</h3>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>制訂階段性目標與時間安排</h5>
-              </div>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>鼓勵參與前端社群或活動</h5>
-              </div>
-              <div class="podcast-line"></div>
-              <a href="#" class="podcast-btn">前往聆聽 podcast</a>
-            </li>
-            <li class="podcast-list-card">
-              <div class="podcast-img">
-                <img src="/images/index/a10.png" alt="podcast image" />
-              </div>
-              <h3 class="podcast-title">面試緊張到從容應對</h3>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>透過面試模擬找出常犯的邏輯漏洞</h5>
-              </div>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>討論遇到不熟悉議題時的回應方式</h5>
-              </div>
-              <div class="podcast-line"></div>
-              <a href="#" class="podcast-btn">前往聆聽 podcast</a>
-            </li>
-            <li class="podcast-list-card">
-              <div class="podcast-img">
-                <img src="/images/index/a11.png" alt="podcast image" />
-              </div>
-              <h3 class="podcast-title">面試緊張到從容應對</h3>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>擬定進階框架或技術研究目標</h5>
-              </div>
-              <div class="podcast-text">
-                <div class="podcast-text-checkedbox">
-                  <img src="/images/btn/checked box.png" alt="checked box" />
-                </div>
-                <h5>培養跨團隊溝通與簡報能力</h5>
-              </div>
-              <div class="podcast-line"></div>
-              <a href="#" class="podcast-btn">前往聆聽 podcast</a>
-            </li>
-          </ul>
-        </div>
       </div>
+      <!-- podcast -->
+      <div class="podcast">
+        <ul class="podcast-list">
+          <li class="podcast-list-card">
+            <div class="podcast-img">
+              <img src="/images/index/a8.png" alt="podcast image" />
+            </div>
+            <h3 class="podcast-title">無經驗到前端工程師 Offer</h3>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>打造前端專案與履歷亮點</h5>
+            </div>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>深度強化面試表現</h5>
+            </div>
+            <div class="podcast-line"></div>
+            <a href="#" class="podcast-btn">前往聆聽 podcast</a>
+          </li>
+          <li class="podcast-list-card">
+            <div class="podcast-img">
+              <img src="/images/index/a9.png" alt="podcast image" />
+            </div>
+            <h3 class="podcast-title">轉職迷茫到明確學習規劃</h3>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>制訂階段性目標與時間安排</h5>
+            </div>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>鼓勵參與前端社群或活動</h5>
+            </div>
+            <div class="podcast-line"></div>
+            <a href="#" class="podcast-btn">前往聆聽 podcast</a>
+          </li>
+          <li class="podcast-list-card">
+            <div class="podcast-img">
+              <img src="/images/index/a10.png" alt="podcast image" />
+            </div>
+            <h3 class="podcast-title">面試緊張到從容應對</h3>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>透過面試模擬找出常犯的邏輯漏洞</h5>
+            </div>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>討論遇到不熟悉議題時的回應方式</h5>
+            </div>
+            <div class="podcast-line"></div>
+            <a href="#" class="podcast-btn">前往聆聽 podcast</a>
+          </li>
+          <li class="podcast-list-card">
+            <div class="podcast-img">
+              <img src="/images/index/a11.png" alt="podcast image" />
+            </div>
+            <h3 class="podcast-title">面試緊張到從容應對</h3>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>擬定進階框架或技術研究目標</h5>
+            </div>
+            <div class="podcast-text">
+              <div class="podcast-text-checkedbox">
+                <img src="/images/btn/checked box.png" alt="checked box" />
+              </div>
+              <h5>培養跨團隊溝通與簡報能力</h5>
+            </div>
+            <div class="podcast-line"></div>
+            <a href="#" class="podcast-btn">前往聆聽 podcast</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 訂閱電子報橫幅 -->
       <div class="banner">
         <div class="banner-img-wrap">
           <img
@@ -353,12 +357,14 @@
               name="name"
               placeholder="請輸入您的大名"
               class="subscribe-input"
+              autocomplete="name"
             />
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="請輸入您的電子信箱"
               class="subscribe-input"
+              autocomplete="email"
             />
             <button type="submit" class="reserve-rightnow-btn subscribe-btn">
               啟動訂閱
@@ -366,23 +372,112 @@
           </form>
         </div>
       </div>
+      <!-- 與我聯繫 -->
       <div class="home-body-wrap">
         <h2 class="home-body-title">與我聯繫</h2>
         <div class="contact-link">
           <ul>
-            <li>
-              <a href="#"
-                >alysewang@hexschool.com 合作洽談
-                <img src="/images/btn/arrow-right.png" alt="link arrow" />
+            <li class="contact-link-list">
+              <a href="#" class="contact-link-list-btn">
+                <p>
+                  <span
+                    class="contact-link-list-underline-text contact-link-text-gap"
+                  >
+                    alysewang@hexschool.com
+                  </span>
+                  <br>
+                  合作洽談
+                </p>
+                <div>
+                  <img
+                    src="/images/btn/arrow-right.png"
+                    alt="link arrow"
+                    class="contact-link-list-img"
+                  />
+                </div>
               </a>
             </li>
-            <li><a href="#">Youtube 職涯諮詢室</a></li>
-            <li><a href="#">podcast 職涯諮詢室</a></li>
-            <li><a href="#">Facebook 前端社群</a></li>
-            <li><a href="#">linkedin 職涯交流</a></li>
-            <li><a href="#">Instagram 日常分享</a></li>
+            <li class="contact-link-list">
+              <a href="#" class="contact-link-list-btn">
+                <div class="contact-link-list-btn-icon-text-wrap">
+                  <img src="/images/btn/youtube.png" alt="youtube-link" />
+                  <p>Youtube 職涯諮詢室</p>
+                </div>
+                <div>
+                  <img
+                    src="/images/btn/arrow-right.png"
+                    alt="link arrow"
+                    class="contact-link-list-img"
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="contact-link-list">
+              <a href="#" class="contact-link-list-btn">
+                <div class="contact-link-list-btn-icon-text-wrap">
+                  <img src="/images/btn/podcast.png" alt="podcast-link" />
+                  <p>podcast 職涯諮詢室</p>
+                </div>
+                <div>
+                  <img
+                    src="/images/btn/arrow-right.png"
+                    alt="link arrow"
+                    class="contact-link-list-img"
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="contact-link-list">
+              <a href="#" class="contact-link-list-btn">
+                <div class="contact-link-list-btn-icon-text-wrap">
+                  <img src="/images/btn/facebook.png" alt="facebook-link" />
+                  <p>Facebook 前端社群</p>
+                </div>
+                <div>
+                  <img
+                    src="/images/btn/arrow-right.png"
+                    alt="link arrow"
+                    class="contact-link-list-img"
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="contact-link-list">
+              <a href="#" class="contact-link-list-btn">
+                <div class="contact-link-list-btn-icon-text-wrap">
+                  <img src="/images/btn/linkedin.png" alt="linkedin-link" />
+                  <p>linkedin 職涯交流</p>
+                </div>
+                <div>
+                  <img
+                    src="/images/btn/arrow-right.png"
+                    alt="link arrow"
+                    class="contact-link-list-img"
+                  />
+                </div>
+              </a>
+            </li>
+            <li class="contact-link-list">
+              <a href="#" class="contact-link-list-btn">
+                <div class="contact-link-list-btn-icon-text-wrap">
+                  <img src="/images/btn/instagram.png" alt="instagram-link" />
+                  <p>Instagram 日常分享</p>
+                </div>
+                <div>
+                  <img
+                    src="/images/btn/arrow-right.png"
+                    alt="link arrow"
+                    class="contact-link-list-img"
+                  />
+                </div>
+              </a>
+            </li>
           </ul>
         </div>
+      </div>
+      <!-- footer 版權資訊 -->
+      <div class="copyright">
+        <h4>© 2025 Alyse Wang. All rights reserved.</h4>
       </div>
     </div>
   </body>
