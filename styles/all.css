@@ -733,6 +733,9 @@ a {
   font-size: 28px;
   margin: 24px 20px;
 }
+.head-nav-link:hover {
+  color: #0027d5;
+}
 
 .head-img {
   display: flex;
